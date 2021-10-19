@@ -10,10 +10,10 @@ def hms():
         y = input("Do you want to work on 'diet' or 'exercise': ")
         if y == "diet":
             while True:
-                x = input("Do you want to 'retrieve' or 'lock' your file: ")
-                if x == "lock":
+                x = input("Do you want to 'retrieve' or 'log' your file: ")
+                if x == "log":
                     getdate()
-                    d.write(p)
+                    d.write(str([p]))
                     d.write(" :- ")
                     d.write(input("Enter details to be added: "))
                     d.write("\n")
@@ -31,10 +31,10 @@ def hms():
 
         elif y == "exercise":
             while True:
-                x = input("Do you want to 'retrieve' or 'lock' your file: ")
-                if x == "lock":
+                x = input("Do you want to 'retrieve' or 'log' your file: ")
+                if x == "log":
                     getdate()
-                    e.write(p)
+                    e.write(str([p]))
                     e.write(" :- ")
                     e.write(input("Enter details to be added: "))
                     e.write("\n")
